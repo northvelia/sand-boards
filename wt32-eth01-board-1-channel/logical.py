@@ -7,8 +7,10 @@ device_id = "GENERIC_DEVICE_ID"  # Identificador genérico del dispositivo
 # Función para activar/desactivar el relé (simulación)
 def set_relay(state):
     if state:
+        Pin(pin_number, 1) # GPIO utilizado / 1 nivel lógico alto 
         print("Relé activado")  # En un sistema real, controla el pin GPIO
     else:
+        Pin(pin_number, 0) # GPIO utilizado / 0 nivel lógico bajo 
         print("Relé desactivado")
 
 # Función para enviar el QR y controlar el relé
