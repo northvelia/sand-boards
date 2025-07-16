@@ -7,6 +7,7 @@ El sistema realiza las siguientes acciones:
 - Recibe un código QR como entrada.
 - Envía una solicitud HTTP a una API para validar el código.
 - Si la validación es exitosa (código de respuesta 200), activa un relé durante 1 segundo y luego lo desactiva.
+- Cualquier otro código de respuesta del servidor el GPIO designado al Relay jamas se activara.
 
 <p style="text-align: center;">
     <img src="1-channel-top.PNG" alt="Diagrama del canal único" width="300"/>
